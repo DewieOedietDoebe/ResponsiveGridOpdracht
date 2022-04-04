@@ -1,0 +1,90 @@
+
+body { color: white;}
+
+body {background-color: rgb(161, 47, 114); opacity: 0.8;}
+
+
+head { color: blue;}
+
+#green-background {background-color: green; }
+h1 {color: green}
+h1 {font-family: "Arial", sans-serif;font-size: 40px; }
+
+p1 {font-family: "Arial", sans-serif; font-size: 20px;}
+p2 {font-family: "Arial", sans-serif; font-size: 15px; color:black}
+
+
+.grid-container {
+  display: grid;
+  background-color: rgb(185, 169, 169);
+  height: auto;
+  width: 20%;
+  grid-template-rows: 1fr 6fr 3fr 1fr;
+  grid-row-gap: 5px;
+  grid-template-areas: "h"
+                       "m"
+                       "w"
+                       "f";
+                    }
+
+
+.header
+{ grid-area: h;
+  color: rgb(221, 40, 40);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  text-align: center;
+  background-color: blue;
+  }
+
+.main
+{ grid-area: m;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  color: rgb(224, 101, 101);
+  text-align: center;
+  background-color: rgb(47, 45, 143);
+    }
+
+.widgetarea
+{ grid-area: w;
+ font-family: 'Courier New', Courier, monospace;
+ font-size: x-large;
+ color: rgb(231, 85, 40);
+ text-align: center;
+ background-color: rgb(84, 31, 230);
+}
+
+.footer
+{ grid-area: f;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  color: rgb(243, 10, 49);
+  text-align: center;
+  background-color: rgb(128, 125, 168);
+}
+
+
+
+//////MEDIA QUERIES\\\\\\
+
+@media only screen and (min-width:768px) {
+
+ .grid-container {
+ display: grid;
+ background-color: rgb(185, 169, 169);
+ height: auto;
+ width: auto;
+ grid-template-rows: 6fr 4fr 1fr;
+ grid-row-gap: 5px;
+ grid-template-columns: 25% 75%;
+ grid-template-areas:"h m"
+                     "h m"
+                     "h m"
+                     "h m"
+                     "h m"
+                     "h w"
+                     "h w"
+                     "h w"
+                     "h f";
+ }
